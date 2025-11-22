@@ -12,16 +12,19 @@ int main() {
 	cout << "¬ведите количество чисел: " << endl;
 	cin >> count;
 	cout << "¬ведите числа: " << endl;
+	
 	float* arr = new float[count];
 	for (int i = 0; i < count; i++) {
 		cin >> number;
 		arr[i] = int(number);
 		count1 += int(number);
 	}
+
 	cout << "÷елые части чисел: ";
 	for (int i = 0; i < count; i++) {
 		cout << arr[i] << ' ';
 	}
+
 	cout << "—умма чисел: " << count1 << endl;
 	delete[] arr;
 }
